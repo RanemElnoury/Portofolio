@@ -17,6 +17,9 @@ a {
     text-decoration: none;
     color: black;
 }
+button a{
+    text-decoration: none;
+}
 
 img {
     width: 100%;
@@ -192,6 +195,12 @@ nav ul li a:hover {
     color: black;
 }
 
+.options {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .options button:hover {
     background-color: #ee845d;
     transform: scale(1.1);
@@ -219,7 +228,12 @@ nav ul li a:hover {
 .nav-item.active a {
     color: #ee845d;
     font-weight: bold;
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+.logo-img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* end header*/
@@ -1115,6 +1129,45 @@ footer .main p {
     width: 55%;
 }
 }
+
+@media (max-width: 992px) {
+    .options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .options button {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .logo img {
+        max-width: 80px;
+    }
+}
+
+@media (min-width: 993px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+    .options{
+        display: block;
+    }
+}
+
 
 /* end home*/
 /* @media(prefers-color-scheme :dark) {
