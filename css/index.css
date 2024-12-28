@@ -165,9 +165,10 @@ header {
     align-items: center;
 }
 
-.main-content img {
-    width: 70px;
-    height: 70px;
+.main-content .logo img {
+
+    width: 55px;
+    height: 55px;
 }
 
 nav ul {
@@ -1131,11 +1132,13 @@ footer .main p {
 }
 
 @media (max-width: 992px) {
+    .main-contant{
+        justify-content: space-between;
+    }
     .options {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        margin-top: 10px;
+        align-items: center;  
     }
 
     .options button {
@@ -1150,36 +1153,37 @@ footer .main p {
         display: flex;
         justify-content: flex-end;
     }
-    .logo img {
+  
+}
+
+
+
+@media (max-width: 970px) {
+
+    .logo {
+        display: none;
+    }
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 0px; 
+    }
+
+    .options button {
+        font-size: 1rem;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+
+    .logo-img {
         max-width: 80px;
     }
 }
-
-@media (min-width: 993px) {
-    .navbar-toggler {
-        display: none;
-    }
-
-    .logo img {
-        max-width: 150px;
-    }
-    .options{
-        display: block;
-    }
-}
-
-
-/* end home*/
-/* @media(prefers-color-scheme :dark) {
-    body {
-        background-color: black;
-        color: white !important;
-    }
-}
-
-@media(prefers-color-scheme :light) {
-    body {
-        background-color: white;
-        color: black;
-    }
-} */
