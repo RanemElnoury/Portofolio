@@ -74,7 +74,7 @@ label:hover {
 
 #dark:checked~.content a,
 #dark:checked~.content button {
-    color: white;
+    color: white !important;
 }
 
 #fa-sun {
@@ -195,7 +195,9 @@ nav ul li a:hover {
     transition: all 1s;
     color: black;
 }
-
+#dark:checked~.content header .options button{
+    color: white !important;
+}
 .options {
     display: flex;
     align-items: center;
@@ -220,7 +222,9 @@ nav ul li a:hover {
     transition: all 1s;
 
 }
-
+#dark:checked~.content header .main-content button span {
+    color: #fff !important;
+}
 .fa-bars:hover {
     color: #ee845d;
     cursor: pointer;
@@ -738,6 +742,9 @@ nav ul li a:hover {
     background-color: #ee845d;
 }
 
+.buttons button a{
+    color: black;
+}
 /*End resume*/
 /*start projects*/
 .projects {
