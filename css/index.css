@@ -769,6 +769,7 @@ nav ul li a:hover {
     font-weight: 500;
     transition: all 0.3s ease;
     border-radius: 5px;
+    text-decoration: none !important;;
 }
 
 .projects .main-contant .links .active {

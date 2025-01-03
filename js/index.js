@@ -45,3 +45,20 @@ document.addEventListener('DOMContentLoaded', () => {
     textElement.textContent = ''; 
     typingEffect();
 });
+
+
+function shareLink(url) {
+    if (navigator.share) {
+        navigator.share({
+            title: 'Check out this project!',
+            text: 'Take a look at this awesome project!',
+            url: url
+        }).then(() => {
+            console.log('Link shared successfully');
+        }).catch((error) => {
+            console.error('Error sharing the link:', error);
+        });
+    } else {
+        alert('Sharing is not supported on this browser.');
+    }
+}
