@@ -542,6 +542,8 @@ nav ul li a:hover {
 .services .main-contant .item:hover .right-item p,
 .services .main-contant .item:hover .right-item span {
     color: black;
+
+
 }
 
 .services .main-contant .item .left-item {
@@ -553,6 +555,9 @@ nav ul li a:hover {
     color: #ee845d;
 }
 
+.services .main-contant .item .right-item h3{
+    font-size: 1.1rem;
+}
 .services .main-contant .item .right-item span {
     color: grey;
 }
